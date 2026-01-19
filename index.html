@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunstprojekt Interstellar</title>
+    <link rel="stylesheet" href="Style1.css">
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <main class="page">
+        <header class="hero">
+            <p class="eyebrow">Kunstprojekt</p>
+            <h1>Interstellar</h1>
+            <p class="lead">Eine visuelle Reise durch Zeit, Raum und die Kraft der Hoffnung.</p>
+            <div class="cta-row">
+                <button class="cta" id="mission-btn">Mission entdecken</button>
+                <button class="cta ghost" onclick="location.href='blackhole.html'">Zum schwarzen Loch</button>
+                <button class="cta ghost" onclick="location.href='warum.html'">Warum?</button>
+            </div>
+            
+        </header>
+
+        <section>
+            <div class="cta-row">
+                <button class="cta ghost" id="melody-sound">Original ähnlicher Soundtrack hören</button>
+            </div>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>Mission</h2>
+                <p>Der Ruf ins Unbekannte. Eine Crew verlässt die Erde auf der Suche nach einer neuen Heimat.</p>
+            </article>
+            <article class="card">
+                <h2>Gargantua</h2>
+                <p>Ein schwarzes Loch, das Zeit krümmt. Nähe zum Ereignishorizont bedeutet Jahre auf der Erde.</p>
+            </article>
+            <article class="card">
+                <h2>Wissenschaftliche meinung</h2>
+                <p>Die wissenschaftliche Einschätzung zu Interstellar ist insgesamt ungewöhnlich positiv - insbesondere im Vergleich zu anderen Science-Fiction-Filmen. Kurz gesagt: Interstellar gilt als einer der wissenschaftlich ambitioniertesten und ernsthaftesten Sci-Fi-Filme, auch wenn er sich am Ende bewusst erzählerische Freiheiten nimmt.</p>
+            </article>
+        </section>
+
+        <section class="timeline">
+            <div>
+                <p class="label">Einsatzzeit</p>
+                <p class="value">2026</p>
+            </div>
+            <div>
+                <p class="label">Klasse</p>
+                <p class="value">8c</p>
+            </div>
+            <div>
+                <p class="label">von</p>
+                <p class="value">A.Martins</p>
+            </div>
+        </section>
+    </main>
+    <div class="mission-overlay" id="mission-overlay" aria-hidden="true">
+        <div class="mission-window" role="dialog" aria-modal="true" aria-label="Mission Simulation">
+            <button class="overlay-close" id="mission-close" aria-label="Simulation schließen">×</button>
+            <canvas id="mission-sim" class="mission-sim"></canvas>
+        </div>
+    </div>
+</body>
+</html>
